@@ -1,7 +1,9 @@
 import type { TProject } from '../types/types';
 import { Button } from './ui/button';
-import github from '../media/svg/github.svg'
-import demo from '../media/svg/demo.svg'
+// import github from '../media/svg/github.svg'
+// import demo from '../media/svg/demo.svg'
+
+import {Github, ExternalLink} from 'lucide-react'
 
 export default function Project(props: TProject) {
     return (
@@ -18,8 +20,8 @@ export default function Project(props: TProject) {
                     ))}
                 </div>
                 <div id="buttons" className='flex gap-4 mt-4'>
-                    <Button className='text-xs bg-white hover:bg-gray-100 text-black border-1 border-gray-300 mt-4 pt-1 pb-1 grow-1 flex gap-2' ><img className='h-5' src={github}/><span>Code</span></Button>
-                    <Button className='text-xs bg-black text-white border-1 border-black mt-4 pt-1 pb-1 grow-1 flex gap-2'><img className='h-3' src={demo}/><span>Demo</span></Button>
+                    <Button className='text-xs bg-white hover:bg-gray-100 text-black border-1 border-gray-300 mt-4 pt-1 pb-1 grow-1 flex gap-2' ><Github/><span>Code</span></Button>
+                    <Button className='text-xs bg-black text-white border-1 border-black mt-4 pt-1 pb-1 grow-1 flex gap-2'><ExternalLink/><span>Demo</span></Button>
                 </div>
             </div>
         </section>

@@ -10,9 +10,6 @@ export default function Hero() {
                 <h1>I'm Diego Padilla</h1>
                 <p className="text-lg font-light">Software Developer</p>   
             </div>
-            <h3 className="text-black font-normal
-            sm:text-left text-center">
-                Check out my best work!</h3>
         </section>
     );
 };
