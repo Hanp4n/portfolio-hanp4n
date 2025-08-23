@@ -12,11 +12,13 @@ function App() {
   const projects: TProject[] = projectsData;
 
   return (
-    <>
+    <div id="projects">
       <Header />
-      <main className='flex flex-col gap-12
+      <main 
+      className='flex flex-col gap-12
       pl-20 pr-20 sm:pr-28 sm:pl-28'>
-        <div className='flex gap-6 md:flex-row flex-col
+        <div 
+        className='flex gap-6 md:flex-row flex-col
         '>
           <Hero/>
           <Projects projects={projects}/>
@@ -24,7 +26,7 @@ function App() {
         {/* <About/> */}
         <Contact/>
       </main>
-    </>
+    </div>
   )
 }
 

@@ -6,9 +6,9 @@ import {Send} from 'lucide-react';
 
 export default function Contact() {
     return (
-        <div>
+        <div id="contact">
             <h1 className="text-2xl font-bold mb-4">Contact</h1>
-            <div className='border-1 border-gray-300 p-6 rounded-xl'>
+            <form className='border-1 border-gray-300 p-6 rounded-xl'>
                 <p className='mb-4 font-bold'>Send Message</p>
                 <div id="contact-fields">
                     <div className='text-sm font-light'>
@@ -37,12 +37,12 @@ export default function Contact() {
                                 <textarea id="message" name="message" placeholder="Your message" className='border-gray-300 rounded-md p-2 resize-none h-32 bg-gray-100 border-0'></textarea>
                             </div>
                             <div className="flex justify-end mt-4">
-                                <Button className='mt-2 grow-1'><Send/>Send Message</Button>
+                                <Button type='submit' className='mt-2 grow-1'><Send/>Send Message</Button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     );
 }

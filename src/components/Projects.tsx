@@ -8,7 +8,8 @@ type ProjectsProps = {
 
 export default function Projects({projects}: ProjectsProps) {
     return (
-        <div className='group/arrow flex justify-center items-center'>
+        <div id="projects"
+        className='group/arrow flex justify-center items-center'>
             <div className='absolute flex-col hidden z-10 items-center
             sm:group-hover/arrow:hidden sm:duration-300 sm:flex'><ArrowBigDown className='w-32 animate-bounce'/><span>Check out my best work!</span></div>
             <div className='flex flex-wrap justify-center w-fit overflow-y-auto h-100 rounded-2xl  

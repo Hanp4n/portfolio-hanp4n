@@ -7,7 +7,7 @@ import {Github, ExternalLink} from 'lucide-react'
 
 export default function Project(props: TProject) {
     return (
-        <section className='group/card overflow-hidden shadow-xl hover:shadow-2xl duration-300 m-4 w-100 rounded-xl shrink-1 grow-1'>
+        <section id="projects" className='group/card overflow-hidden shadow-xl hover:shadow-2xl duration-300 m-4 w-100 rounded-xl shrink-1 grow-1'>
             <div className='h-36 overflow-hidden '>
                 <img className='group-hover/card:scale-110 duration-300' src={props.imgURL}/>
             </div>
