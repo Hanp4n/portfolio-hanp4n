@@ -122,5 +122,39 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: 'Inter', ui-sans-serif;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+  }
+  
+}
+
+@theme {
+  --animate-wiggle: wiggle 0.7s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-9deg);
+    }
+    50% {
+      transform: rotate(9deg);
+    }
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 7px;
+    height: 15px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 100vh;
   }
 }
